@@ -3,9 +3,7 @@
 Drink tracker is a weekend project that helps you keep track of how many drink you have taken so far, it uses the device file system.
 
 ## Screenshots
-<img src="screenshots/empty.png" width="192"/>
-<img src="screenshots/active.png" width="192"/>
-<img src="screenshots/history.png" width="192"/>
+<img src="screenshots/empty.png" width="192"/> <img src="screenshots/active.png" width="192"/> <img src="screenshots/history.png" width="192"/>
 
 ## Gallery App Manager Link
 
