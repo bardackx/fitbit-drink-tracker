@@ -1,0 +1,89 @@
+<svg>
+    <use id="container" href="#panoramaview">
+
+        <!-- HOME -->
+        <use id="home-view" href="#panoramaview-item">
+
+            <!-- ADD ACTIVE DRINK BUTTON -->
+            <use id="add-active-drink-button" href="#combo-button-lower-right" fill="fb-peach">
+                <set href="combo-button-icon" attributeName="href" to="plus.png" />
+                <set href="combo-button-icon-press" attributeName="href" to="plus.png" />
+            </use>
+
+            <!-- CONFIGURE ACTIVE DRINK BUTTON -->
+            <use id="configure-active-drink-button" href="#combo-button-upper-left" fill="white">
+                <set href="combo-button-icon" attributeName="href" to="config.png" />
+                <set href="combo-button-icon-press" attributeName="href" to="config_press.png" />
+            </use>
+
+            <!-- FINISH ACTIVE DRINK BUTTON -->
+            <use id="finish-active-drink-button" href="#combo-button-lower-right" fill="fb-peach">
+                <set href="combo-button-icon" attributeName="href" to="done.png" />
+                <set href="combo-button-icon-press" attributeName="href" to="done.png" />
+            </use>
+
+            <!-- EMPTY TEXT SCREEN -->
+            <use id="home-view-empty-text" href="#mixed-text-center-mid" height="100%">
+                <set href="#header/text" attributeName="text-buffer" to="Drink safely" />
+                <set href="#copy/text" attributeName="text-buffer" to="Add the first drink of the night" />
+            </use>
+
+            <!-- 2ND DRINK SCREEN -->
+            <use id="home-view-no-active-drink-text" href="#mixed-text-center-mid" height="100%">
+                <set href="#header/text" attributeName="text-buffer" to="One is nothing" />
+                <set href="#copy/text" attributeName="text-buffer" to="This would be your second drink" />
+            </use>
+
+            <!-- ACTIVE DRINK SCREEN -->
+            <g id="home-view-active-drink">
+                <g>
+                    <text id="active-drink-minutes" font-size="24" x="50%" y="50%-16%-12" fill="white" width="100%" text-anchor="middle" font-family="System-Regular">0 min.</text>
+                    <text id="active-drink-descr" font-size="24" x="50%" y="50%+16%+6+24" fill="white" width="100%" text-anchor="middle" font-family="System-Regular">330 ml / 3.9% abv</text>
+                    <!--<circle cx="50%" cy="50%" r="16%" fill="rgb(31,31,31)" />-->
+                    <image x="50%-16%" y="50%-16%" width="32%" height="32%" href="beer-mug.png" />
+                </g>
+                <animate attributeName="opacity" begin="enable" from="0" to="1" dur="0.25" />
+                <animateTransform attributeType="translate" from="0,12" to="0,0" begin="enable" dur="0.24" easing="ease-out" />
+            </g>
+
+        </use>
+
+        <!-- HISTORY -->
+        <use id="history-view" href="#panoramaview-item">
+
+            <defs>
+                <symbol id="my-tile-item" href="#tile-list-item" focusable="false" pointer-events="none" system-events="all" display="none">
+                    <text id="text" font-size="24" text-length="64" x="8" y="8+24" />
+                    <text id="subtext" font-size="24" text-length="64" x="8" y="8+24+8+24" fill="rgb(128,128,128)" />
+                    <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+                    <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%" height="100%-2" opacity="0" />
+                </symbol>
+            </defs>
+            <use id="my-list" href="#tile-list">
+                <var id="virtual" value="1" />
+                <var id="separator-height-bottom" value="2" />
+                <use id="my-pool" href="#tile-list-pool">
+                    <use id="my-pool[0]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[1]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[2]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[3]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[4]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[5]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[6]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[7]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[8]" href="#my-tile-item" class="tile-list-item" />
+                    <use id="my-pool[9]" href="#my-tile-item" class="tile-list-item" />
+                </use>
+            </use>
+
+        </use>
+
+        <!-- Have enough pagination dots for your slides (extras are hidden) -->
+        <use id="pagination-dots" href="#pagination-widget" y="8">
+            <use href="#pagination-dot" />
+            <use href="#pagination-dot" />
+            <use href="#pagination-highlight-dot" />
+        </use>
+
+    </use>
+</svg>
