@@ -26,3 +26,6 @@ This features are planned but not developed:
 - Change active drink image
 - Delete from history confirmation dialog
 - Clear all history
+
+## Experimental results
+A preson who is drinking will not remember to update the tracker, maybe a buzz every now and then would be helpful
